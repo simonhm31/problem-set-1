@@ -1,0 +1,109 @@
+Problem Set 1 
+
+
+Problem 1 breaking ciphers (6 points):
+    1.1 - 
+        1 - Frequency - The ciphertext's letter frequencies are:
+        r: 84
+        b: 68
+        m: 62
+        k: 49
+        j: 48
+        w: 47
+        i: 41
+        p: 30
+        u: 24
+        d: 23
+        h: 23
+        v: 22
+        x: 20
+        y: 19
+        n: 17
+        s: 17
+        ↵: 14
+        t: 13
+        l: 8
+        q: 7
+        o: 7
+        e: 5
+        a: 5
+        c: 5
+        f: 1
+        g: 1
+
+        From this we can guess that 'e' is encrypted as 'r', which is true
+
+        2 - Decryption: 
+        "BECAUSE THE PRACTICE OF THE BASIC MOVEMENTS OF KATA IS
+        THE FOCUS AND MASTERY OF SELF IS THE ESSENCE OF
+        MATSUBAYASHI RYU KARATE DO I SHALL TRY TO ELUCIDATE THE
+        MOVEMENTS OF THE KATA ACCORDING TO MY INTERPRETATION
+        BASED ON FORTY YEARS OF STUDY
+        IT IS NOT AN EASY TASK TO EXPLAIN EACH MOVEMENT AND ITS
+        SIGNIFICANCE AND SOME MUST REMAIN UNEXPLAINED TO GIVE A
+        COMPLETE EXPLANATION ONE WOULD HAVE TO BE QUALIFIED AND
+        INSPIRED TO SUCH AN EXTENT THAT HE COULD REACH THE STATE
+        OF ENLIGHTENED MIND CAPABLE OF RECOGNIZING SOUNDLESS
+        SOUND AND SHAPELESS SHAPE I DO NOT DEEM MYSELF THE FINAL
+        AUTHORITY BUT MY EXPERIENCE WITH KATA HAS LEFT NO DOUBT
+        THAT THE FOLLOWING IS THE PROPER APPLICATION AND
+        INTERPRETATION I OFFER MY THEORIES IN THE HOPE THAT THE
+        ESSENCE OF OKINAWAN KARATE WILL REMAIN INTACT"
+
+
+    1.2 -
+        Ciphertext: xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpit
+        ghlxiwiwtxgqadds
+
+        1 - Decryption
+        "if we all unite we will cause the rivers to stain the great waters with their blood"
+
+        T is the most common letter, so we can take a guess that 'e' is 
+        encrypted as 't'. That gives us a shift of 15, which is correct. 
+        It only took ONE letter identified through frequency analysis to 
+        crack the cipher.
+
+
+Problem 2 - 
+    1.4 -
+        1 - 
+        Each letter is encoded with 7 bits (128 possible characters), and the password has 8 letters.
+        Becausae this question is asking "How many possible passwords are there with this info?"
+        Therefore we can just take 128 to the power of 8
+        The size of the key space is 128 ^ 8, or 72,057,594,037,927,936
+
+        2 -
+        Because 128 ^ 8 = 2 ^ 56. the corresponding key length in bits is 56
+
+        3 -
+        In this case, the size of the key space would be 26 ^ 8, so
+        the corresponding key length in bits would be log(26 ^ 8), which 
+        is 37.6
+
+        4 -
+        a -
+        As we saw in step 2, the length of the password is 8, the key length in bits is 56.
+        For the key length to be >= 128 bits, the length of the password would have to
+        be 19 because the relationship between the key length in bits and the number of
+        characters n is: key length / 7 = number of characters. Plugging 128 in to the 
+        key length we see that 128 / 7 = 18.28 characters. Therefore the key length has to 
+        be greater than or equal to 19
+
+        b -
+        As we saw in step 3, when it is just lowercase letters the corresponding 
+        key length in bits is 37.6. When it is only lowercase letters, you need 4.7
+        bits to represent each possible letter. The relationship between the key length 
+        in bits and the number of characters would therefore be key length / 4.7 = number
+        of characters. Therefore we have 128 / 4.7 = 27.2, so you need 28 letters
+
+
+    Problem 3 - 
+        exercise 1.5 -
+
+
+        
+
+
+
+
+
